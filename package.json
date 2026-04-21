@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "esbuild": "^0.24.0",
     "katex": "^0.16.45",
     "katex-svelte": "^0.1.0"
   },
