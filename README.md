@@ -3,7 +3,7 @@
 Documentation site for [katex-svelte](https://github.com/makeez-labs/katex-svelte).
 
 Built with SvelteKit, deployed to GitHub Pages at
-[katex-svelte.makeez.dev](https://katex-svelte.makeez.dev).
+[katex-svelte.makeez.dev](https://katex-docs.vercel.app).
 
 ## Development
 
@@ -44,4 +44,4 @@ src/routes/
 
 ## License
 
-MIT © [Makeez Labs](https://makeez.dev)
+MIT © [Makeez Labs](https://github.com/makeez-labs)
