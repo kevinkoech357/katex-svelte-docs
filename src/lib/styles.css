@@ -120,16 +120,16 @@ pre code {
 }
 
 /* KaTeX display in docs */
-[data-theme="dark"] :global(.katex) {
+[data-theme="dark"] .katex {
   color: var(--dark) !important;
 }
 
-:global(.katex-display) {
+.katex-display {
   margin:   1.2em 0 !important;
   overflow-x: auto;
 }
 
-:global(.katex) { font-size: 1.05em; }
+.katex { font-size: 1.05em; }
 
 ::-webkit-scrollbar {
   width:  8px;
