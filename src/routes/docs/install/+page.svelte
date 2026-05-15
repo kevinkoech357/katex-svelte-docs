@@ -6,7 +6,7 @@
   const peer = `{ "peerDependencies": { "svelte": "^5.0.0" } }`
   const preload = `<!-- app.html — optional preload for faster first render -->
 <link rel="preload"
-  href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
+  href="https://cdn.jsdelivr.net/npm/katex@0.16.45/dist/katex.min.css"
   as="style" />`
 </script>
 

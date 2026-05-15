@@ -34,7 +34,7 @@ getElement('Xx')       // → undefined`
 
 <svelte:head><title>ELEMENTS — katex-svelte</title></svelte:head>
 <h1>ELEMENTS</h1>
-<p class="lead">Periodic table data for the first 20 elements — symbol, name, atomic number, atomic mass, and group. Useful for element lookup in Paa Campus chemistry lessons.</p>
+<p class="lead">Periodic table data for all 118 elements — symbol, name, atomic number, atomic mass, and group. Useful for element lookup in Paa Campus chemistry lessons.</p>
 <div class="badge">Data</div>
 <h2>Usage</h2>
 <CodeBlock code={usage} lang="typescript" />

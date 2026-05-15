@@ -38,11 +38,22 @@ export const navigation: NavSection[] = [
   {
     title: 'Utilities',
     items: [
-      { label: 'renderChem',    href: '/docs/render-chem'   },
-      { label: 'renderAuto',    href: '/docs/render-auto'   },
-      { label: 'buildReaction', href: '/docs/build-reaction' },
-      { label: 'searchFormulas', href: '/docs/search'       },
-      { label: 'ELEMENTS',      href: '/docs/elements'      },
+      { label: 'renderChem',      href: '/docs/render-chem'   },
+      { label: 'renderLatex',     href: '/docs/render-latex'  },
+      { label: 'renderAuto',      href: '/docs/render-auto'   },
+      { label: 'buildReaction',   href: '/docs/build-reaction' },
+      { label: 'searchFormulas',  href: '/docs/search'        },
+      { label: 'ELEMENTS',        href: '/docs/elements'      },
+    ],
+  },
+  {
+    title: 'Chemistry tools',
+    items: [
+      { label: 'parseFormula',       href: '/docs/parse-formula'       },
+      { label: 'checkBalance',       href: '/docs/check-balance'       },
+      { label: 'calculateMolarMass', href: '/docs/calculate-molar-mass' },
+      { label: 'toCe',               href: '/docs/to-ce'               },
+      { label: 'isValidChem',        href: '/docs/is-valid-chem'       },
     ],
   },
   {
