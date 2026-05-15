@@ -24,7 +24,7 @@
 </div>
 
 <style>
-  .wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); margin: 16px 0; }
+  .wrap { overflow-x: auto; border-radius: var(--radius-lg); border: 1px solid var(--border); margin: 16px 0; box-shadow: var(--shadow-sm); }
   table { width: 100%; border-collapse: collapse; font-size: 13px; }
   th { background: var(--surface); padding: 10px 14px; text-align: left; font-size: 10px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--border); white-space: nowrap; }
   td { padding: 10px 14px; border-bottom: 1px solid var(--border); vertical-align: top; color: var(--mid); }

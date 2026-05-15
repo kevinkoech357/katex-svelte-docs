@@ -29,11 +29,21 @@
     background: var(--surface);
     color: var(--mid);
     cursor: pointer;
-    transition: all .15s ease;
+    transition: all .2s ease;
+    flex-shrink: 0;
   }
   
   .theme-toggle:hover {
     border-color: var(--brand);
     color: var(--brand);
+    box-shadow: 0 0 0 3px var(--brand-glow);
+  }
+
+  .theme-toggle :global(svg) {
+    transition: transform 0.3s ease;
+  }
+
+  .theme-toggle:hover :global(svg) {
+    transform: rotate(15deg);
   }
 </style>

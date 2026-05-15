@@ -108,15 +108,16 @@
     display:        flex;
     flex-direction: column;
     border-right:   1px solid var(--border);
-    background:     var(--white);
+    background:     color-mix(in srgb, var(--white) 98%, var(--brand));
     overflow-y:     auto;
+    box-shadow:     var(--shadow-sm);
   }
 
   .sidebar-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 16px;
+    padding: 16px 18px;
     border-bottom: 1px solid var(--border);
   }
 
@@ -126,15 +127,18 @@
     font-weight:  900;
     letter-spacing: -0.03em;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0;
   }
 
   .logo-name   { color: var(--dark); }
   .logo-sep    { color: var(--muted); }
   .logo-svelte { color: var(--brand); }
 
-  .nav { flex: 1; padding: 16px 12px; overflow-y: auto; }
+  .nav { flex: 1; padding: 16px 10px; overflow-y: auto; }
 
-  .section { margin-bottom: 22px; }
+  .section { margin-bottom: 20px; }
 
   .section-title {
     font-size:      10px;
@@ -143,7 +147,7 @@
     text-transform: uppercase;
     color:          var(--muted);
     padding:        0 8px;
-    margin-bottom:  6px;
+    margin-bottom:  4px;
   }
 
   .item {
@@ -156,13 +160,24 @@
     font-weight:     500;
     color:           var(--mid);
     text-decoration: none;
-    transition:      background 0.1s, color 0.1s;
+    position:        relative;
   }
 
   .item:hover        { background: var(--surface); color: var(--dark); text-decoration: none; }
   .item.active       { background: var(--brand-light); color: var(--brand); font-weight: 600; }
+  .item.active::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 16px;
+    border-radius: 0 2px 2px 0;
+    background: var(--brand);
+  }
 
-  .badge {
+  .sidebar .badge {
     font-size:    10px;
     font-weight:  700;
     background:   var(--brand);
@@ -188,25 +203,28 @@
     border-radius:   6px;
     font-size:       12px;
     font-weight:     500;
-    color:           var(--mid);
+    color:           var(--muted);
     text-decoration: none;
-    transition:      background 0.12s;
     border:          none;
     background:      transparent;
     cursor:          pointer;
   }
 
-  .foot-link:hover { background: var(--surface); text-decoration: none; }
+  .foot-link:hover { background: var(--surface); color: var(--mid); text-decoration: none; }
 
   .topbar {
     display: none;
     justify-content: flex-end;
-    padding: 12px 16px;
+    align-items: center;
+    padding: 10px 16px;
     border-bottom: 1px solid var(--border);
-    background: var(--white);
+    background: color-mix(in srgb, var(--white) 85%, transparent);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     position: sticky;
     top: 0;
     z-index: 100;
+    min-height: 52px;
   }
 
   .content {
